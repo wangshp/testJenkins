@@ -4,8 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'set'
-                echo helloworld > hello.txt
-                more hello.txt
+                bat 'echo helloworld > hello.txt'
+                bat 'more hello.txt'
             }
         }
     }
